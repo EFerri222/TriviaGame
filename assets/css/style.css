@@ -1,0 +1,20 @@
+body {
+    background-image: url("../images/background.jpg")
+}
+
+header {
+    color: yellow;
+    text-align: center;
+    font-size: 72px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
+button {
+    margin-left: 50px;
+}
