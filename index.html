@@ -10,9 +10,40 @@
     <script src="assets/javascript/app.js"></script>
 </head>
 <body>
-    <header>Star Wars Quiz</header>
     <div class="container">
-        <button>Play</button>
+        <header>Star Wars Trivia</header>
+
+        <input id="start-button" type="button" value="Start" onclick="start();">
+
+            <form id="quiz" name="quiz">
+
+                <p>Question 1</p>
+                <input type="radio" name="question1" value="Luke">Answer 1<br>
+                <input type="radio" name="question1" value="Vader">Answer 2<br>
+                <input type="radio" name="question1" value="Luke">Answer 3<br>
+                <input type="radio" name="question1" value="Vader">Answer 4<br>
+
+                <p>Question 2</p>
+                <input type="radio" name="question2" value="Luke">Answer 1<br>
+                <input type="radio" name="question2" value="Vader">Answer 2<br>
+                <input type="radio" name="question2" value="Luke">Answer 3<br>
+                <input type="radio" name="question2" value="Vader">Answer 4<br>
+
+                <p>Question 3</p>
+                <input type="radio" name="question3" value="Luke">Answer 1<br>
+                <input type="radio" name="question3" value="Vader">Answer 2<br>
+                <input type="radio" name="question3" value="Luke">Answer 3<br>
+                <input type="radio" name="question3" value="Vader">Answer 4<br>
+
+                <p>Question 4</p>
+                <input type="radio" name="question4" value="Luke">Answer 1<br>
+                <input type="radio" name="question4" value="Vader">Answer 2<br>
+                <input type="radio" name="question4" value="Luke">Answer 3<br>
+                <input type="radio" name="question4" value="Vader">Answer 4<br><br>
+
+                <input id="done-button" type="button" value="Done" onclick="done();">
+
+            </form>
     </div>
 </body>
 </html>
