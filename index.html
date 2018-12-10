@@ -11,39 +11,50 @@
 </head>
 <body>
     <div class="container">
+
         <header>Star Wars Trivia</header>
 
         <input id="start-button" type="button" value="Start" onclick="start();">
 
-            <form id="quiz" name="quiz">
+        <div id="#time-remaining"></div>
 
-                <p>Question 1</p>
-                <input type="radio" name="question1" value="Luke">Answer 1<br>
-                <input type="radio" name="question1" value="Vader">Answer 2<br>
-                <input type="radio" name="question1" value="Luke">Answer 3<br>
-                <input type="radio" name="question1" value="Vader">Answer 4<br>
+        <form id="quiz" name="quiz">
 
-                <p>Question 2</p>
-                <input type="radio" name="question2" value="Luke">Answer 1<br>
-                <input type="radio" name="question2" value="Vader">Answer 2<br>
-                <input type="radio" name="question2" value="Luke">Answer 3<br>
-                <input type="radio" name="question2" value="Vader">Answer 4<br>
+            <p>What record did Han Solo break in the Millennium Flacon?</p>
+            <input type="radio" name="question1" value="Made the Kessel Run in 12 Parsecs">Made the Kessel Run in 12 Parsecs<br>
+            <input type="radio" name="question1" value="Luke">Luke<br>
+            <input type="radio" name="question1" value="C3PO">C3PO<br>
+            <input type="radio" name="question1" value="Blah">Blah<br>
 
-                <p>Question 3</p>
-                <input type="radio" name="question3" value="Luke">Answer 1<br>
-                <input type="radio" name="question3" value="Vader">Answer 2<br>
-                <input type="radio" name="question3" value="Luke">Answer 3<br>
-                <input type="radio" name="question3" value="Vader">Answer 4<br>
+            <p>Question 2</p>
+            <input type="radio" name="question2" value="correct2">Correct<br>
+            <input type="radio" name="question2" value="a">Answer 2<br>
+            <input type="radio" name="question2" value="b">Answer 3<br>
+            <input type="radio" name="question2" value="c">Answer 4<br>
 
-                <p>Question 4</p>
-                <input type="radio" name="question4" value="Luke">Answer 1<br>
-                <input type="radio" name="question4" value="Vader">Answer 2<br>
-                <input type="radio" name="question4" value="Luke">Answer 3<br>
-                <input type="radio" name="question4" value="Vader">Answer 4<br><br>
+            <p>Question 3</p>
+            <input type="radio" name="question3" value="correct3">Correct<br>
+            <input type="radio" name="question3" value="d">Answer 2<br>
+            <input type="radio" name="question3" value="e">Answer 3<br>
+            <input type="radio" name="question3" value="f">Answer 4<br>
 
-                <input id="done-button" type="button" value="Done" onclick="done();">
+            <p>Question 4</p>
+            <input type="radio" name="question4" value="correct4">Correct<br>
+            <input type="radio" name="question4" value="Vader">Answer 2<br>
+            <input type="radio" name="question4" value="Luke">Answer 3<br>
+            <input type="radio" name="question4" value="Vader">Answer 4<br><br>
 
-            </form>
+            <input id="done-button" type="button" value="Done" onclick="done();">
+
+        </form>
+
+        <div id="results">
+            All Done!
+            <p id="number-correct"></p>
+            <p id="number-incorrect"></p>
+            <p id="number-unanswered"></p>
+        </div>
+        
     </div>
 </body>
 </html>
