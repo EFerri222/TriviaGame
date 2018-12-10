@@ -1,4 +1,4 @@
-var number = 90;
+var number = 60;
 var intervalId;
 
 $(document).ready(function() {
@@ -15,28 +15,18 @@ function start() {
     $("#start-button").hide();
     $("#time-remaining").show();
     $("#quiz").show();
-    // $("#time-remaining").show();
     clearInterval(intervalId);
     intervalId = setInterval(decrement, 1000);
 
-    //  The decrement function.
     function decrement() {
-
-        //  Decrease number by one.
         number--;
+        $("#time-remaining").text("Time remaining: " + number + " seconds");
   
-        //  Show the number in the #show-number tag.
-        $("#time-remaining").text("Time remaining: " + number);
-  
-  
-        //  Once number hits zero...
         if (number === 0) {
-  
-          //  ...run the stop function.
           stop();
           done();
         }
-      }
+    }
 }
 
 function done() {
