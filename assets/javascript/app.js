@@ -1,11 +1,42 @@
+var number = 90;
+var intervalId;
+
 $(document).ready(function() {
     $("#quiz").hide();
     $("#results").hide();
+    $("#time-remaining").hide();
 });
+
+function stop() {
+    clearInterval(intervalId);
+  }
 
 function start() {
     $("#start-button").hide();
+    $("#time-remaining").show();
     $("#quiz").show();
+    // $("#time-remaining").show();
+    clearInterval(intervalId);
+    intervalId = setInterval(decrement, 1000);
+
+    //  The decrement function.
+    function decrement() {
+
+        //  Decrease number by one.
+        number--;
+  
+        //  Show the number in the #show-number tag.
+        $("#time-remaining").text("Time remaining: " + number);
+  
+  
+        //  Once number hits zero...
+        if (number === 0) {
+  
+          //  ...run the stop function.
+          stop();
+          done();
+        }
+      }
 }
 
 function done() {
@@ -33,17 +64,17 @@ function done() {
         unanswered++;
     }
 
-    if (question1 === "Vader") {
+    if (question3 === "Vader") {
         correct++;
-    } else if (question1 === "Luke" || question1 === "C3PO" || question1 === "Blah") {
+    } else if (question3 === "Luke" || question3 === "C3PO" || question3 === "Blah") {
         incorrect++;
     } else {
         unanswered++;
     }
 
-    if (question1 === "Vader") {
+    if (question4 === "Vader") {
         correct++;
-    } else if (question1 === "Luke" || question1 === "C3PO" || question1 === "Blah") {
+    } else if (question4 === "Luke" || question4 === "C3PO" || question4 === "Blah") {
         incorrect++;
     } else {
         unanswered++;
@@ -54,4 +85,5 @@ function done() {
     $("#number-correct").text("Correct: " + correct);
     $("#number-incorrect").text("Incorrect: " + incorrect);
     $("#number-unanswered").text("Unanswered: " + unanswered);
+    stop();
 }
