@@ -40,31 +40,31 @@ function done() {
 
     if (question1 === "Made the Kessel Run in 12 Parsecs") {
         correct++;
-    } else if (question1 === "Luke" || question1 === "C3PO" || question1 === "Blah") {
+    } else if (question1 === "incorrect") {
         incorrect++;
     } else {
         unanswered++;
     }
 
-    if (question2 === "Vader") {
+    if (question2 === "No, I am your father") {
         correct++;
-    } else if (question2 === "Luke" || question2 === "C3PO" || question2 === "Blah") {
+    } else if (question2 === "incorrect") {
         incorrect++;
     } else {
         unanswered++;
     }
 
-    if (question3 === "Vader") {
+    if (question3 === "The Empire Strikes Back") {
         correct++;
-    } else if (question3 === "Luke" || question3 === "C3PO" || question3 === "Blah") {
+    } else if (question3 === "incorrect") {
         incorrect++;
     } else {
         unanswered++;
     }
 
-    if (question4 === "Vader") {
+    if (question4 === "R2D2") {
         correct++;
-    } else if (question4 === "Luke" || question4 === "C3PO" || question4 === "Blah") {
+    } else if (question4 === "incorrect") {
         incorrect++;
     } else {
         unanswered++;

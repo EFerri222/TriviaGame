@@ -15,6 +15,7 @@ header {
     width: 50%;
     background-color: black;
     /* padding-bottom: 50px; */
+    padding-left: 20px;
 }
 
 #start-button {
